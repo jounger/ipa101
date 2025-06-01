@@ -1,0 +1,1343 @@
+{
+  "name": "International Phonetic Alphabet",
+  "abbreviation": "IPA",
+  "description": "A system of phonetic notation based primarily on the Latin alphabet, used by linguists, speech-language pathologists, singers, actors, and translators.",
+  "vowel_symbols": "iː ɪ ʊ uː ɛ ə ɜː ɔː æ ʌ ɑː ɒ",
+  "diphthong_symbols": "ɪə eɪ ʊə ɔɪ əʊ eə aɪ aʊ",
+  "consonant_symbols": "p b t d tʃ dʒ k g f v θ ð s z ʃ ʒ m n ŋ h l r w j",
+  "layout": "iː ɪ ʊ uː ɪə eɪ * * ɛ ə ɜː ɔː ʊə ɔɪ əʊ * æ ʌ ɑː ɒ eə aɪ aʊ * p b t d tʃ dʒ k g f v θ ð s z ʃ ʒ m n ŋ h l r w j",
+  "phonemes": [
+    {
+      "symbol": "iː",
+      "description": "Close front unrounded vowel",
+      "type": "vowel:monophthong:long",
+      "examples": [
+        {
+          "text": "sheep",
+          "transcription": "/ʃiːp/"
+        },
+        {
+          "text": "see",
+          "transcription": "/siː/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_sheep_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_sheep_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/RZmGzSb-6OM"
+        }
+      ]
+    },
+    {
+      "symbol": "ɪ",
+      "description": "Near-close near-front unrounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "ship",
+          "transcription": "/ʃɪp/"
+        },
+        {
+          "text": "sit",
+          "transcription": "/sɪt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_ship_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_ship_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/TNFKG0yvDx4"
+        }
+      ]
+    },
+    {
+      "symbol": "ʊ",
+      "description": "Near-close near-back rounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "good",
+          "transcription": "/gʊd/"
+        },
+        {
+          "text": "foot",
+          "transcription": "/fʊt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_foot_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_foot_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/eJ7dM_LU9t4"
+        }
+      ]
+    },
+    {
+      "symbol": "uː",
+      "description": "Close back rounded vowel",
+      "type": "vowel:monophthong:long",
+      "examples": [
+        {
+          "text": "shoot",
+          "transcription": "/ʃuːt/"
+        },
+        {
+          "text": "blue",
+          "transcription": "/bluː/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_blue_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_blue_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/mnKEGLuEzV4"
+        }
+      ]
+    },
+    {
+      "symbol": "ɛ",
+      "description": "Open-mid front unrounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "bed",
+          "transcription": "/bɛd/"
+        },
+        {
+          "text": "head",
+          "transcription": "/hɛd/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_head_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_head_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/hLN1cdSTDo8"
+        }
+      ]
+    },
+    {
+      "symbol": "ə",
+      "description": "Mid central vowel (schwa)",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "teacher",
+          "transcription": "/ˈtiːtʃər/"
+        },
+        {
+          "text": "above",
+          "transcription": "/əˈbʌv/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_above_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_above_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/wg0P0oYkniE"
+        }
+      ]
+    },
+    {
+      "symbol": "ɜː",
+      "description": "Open-mid central unrounded vowel",
+      "type": "vowel:monophthong:long",
+      "examples": [
+        {
+          "text": "bird",
+          "transcription": "/bɜːd/"
+        },
+        {
+          "text": "girl",
+          "transcription": "/gɜːl/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_bird_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/zSJJWHymEPw"
+        }
+      ]
+    },
+    {
+      "symbol": "ɔː",
+      "description": "Open-mid back rounded vowel",
+      "type": "vowel:monophthong:long",
+      "examples": [
+        {
+          "text": "door",
+          "transcription": "/dɔːr/"
+        },
+        {
+          "text": "thought",
+          "transcription": "/θɔːt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_horse_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_horse_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/KHllC40_u1Q"
+        }
+      ]
+    },
+    {
+      "symbol": "æ",
+      "description": "Near-open front unrounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "cat",
+          "transcription": "/kæt/"
+        },
+        {
+          "text": "hat",
+          "transcription": "/hæt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_hat_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_hat_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/qVhaIHk88a8"
+        }
+      ]
+    },
+    {
+      "symbol": "ʌ",
+      "description": "Open-mid back unrounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "up",
+          "transcription": "/ʌp/"
+        },
+        {
+          "text": "luck",
+          "transcription": "/lʌk/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_cup_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_cup_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/PZwKFFp7V50"
+        }
+      ]
+    },
+    {
+      "symbol": "ɑː",
+      "description": "Open back unrounded vowel",
+      "type": "vowel:monophthong:long",
+      "examples": [
+        {
+          "text": "father",
+          "transcription": "/ˈfɑːðər/"
+        },
+        {
+          "text": "car",
+          "transcription": "/kɑːr/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_father_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_father_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/uDHMuMQdBNw"
+        }
+      ]
+    },
+    {
+      "symbol": "ɒ",
+      "description": "Open back rounded vowel",
+      "type": "vowel:monophthong:short",
+      "examples": [
+        {
+          "text": "lot",
+          "transcription": "/lɒt/"
+        },
+        {
+          "text": "on",
+          "transcription": "/ɒn/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_sock_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/MAk-XtHsyzM"
+        }
+      ]
+    },
+    {
+      "symbol": "ɪə",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "ear",
+          "transcription": "/ɪə/"
+        },
+        {
+          "text": "here",
+          "transcription": "/hɪə/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_ear_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/vC0h4S0YPJc"
+        }
+      ]
+    },
+    {
+      "symbol": "eɪ",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "day",
+          "transcription": "/deɪ/"
+        },
+        {
+          "text": "wait",
+          "transcription": "/weɪt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_day_2023feb_002.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_day_2023feb_002.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/5FMPlqlFt9g"
+        }
+      ]
+    },
+    {
+      "symbol": "ʊə",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "tourist",
+          "transcription": "/ˈtʊərɪst/"
+        },
+        {
+          "text": "poor",
+          "transcription": "/pʊə/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_pure_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/nHSqluHrD-U"
+        }
+      ]
+    },
+    {
+      "symbol": "ɔɪ",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "boy",
+          "transcription": "/bɔɪ/"
+        },
+        {
+          "text": "toy",
+          "transcription": "/tɔɪ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_boy_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_boy_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/lFRrEI85IcM"
+        }
+      ]
+    },
+    {
+      "symbol": "əʊ",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "show",
+          "transcription": "/ʃəʊ/"
+        },
+        {
+          "text": "go",
+          "transcription": "/gəʊ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_nose_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/r1BRCG0P9C8"
+        }
+      ]
+    },
+    {
+      "symbol": "eə",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "air",
+          "transcription": "/eə/"
+        },
+        {
+          "text": "hair",
+          "transcription": "/hɛə/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_hair_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/0J7-5maJJIk"
+        }
+      ]
+    },
+    {
+      "symbol": "aɪ",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "my",
+          "transcription": "/maɪ/"
+        },
+        {
+          "text": "eye",
+          "transcription": "/aɪ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_fire_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/Hb8COxAtl14"
+        }
+      ]
+    },
+    {
+      "symbol": "aʊ",
+      "description": "Diphthong",
+      "type": "vowel:diphthong",
+      "examples": [
+        {
+          "text": "how",
+          "transcription": "/haʊ/"
+        },
+        {
+          "text": "mouth",
+          "transcription": "/maʊθ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_hour_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/9WDnVMQIaTs"
+        }
+      ]
+    },
+    {
+      "symbol": "p",
+      "description": "Voiceless bilabial plosive",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "pea",
+          "transcription": "/piː/"
+        },
+        {
+          "text": "pen",
+          "transcription": "/pɛn/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_pen_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_pen_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/AZRREr7DqqM"
+        }
+      ]
+    },
+    {
+      "symbol": "b",
+      "description": "Voiced bilabial plosive",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "book",
+          "transcription": "/bʊk/"
+        },
+        {
+          "text": "boat",
+          "transcription": "/bəʊt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_book_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_book_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/yP7aCKO6bTE"
+        }
+      ]
+    },
+    {
+      "symbol": "t",
+      "description": "Voiceless alveolar plosive",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "tea",
+          "transcription": "/tiː/"
+        },
+        {
+          "text": "town",
+          "transcription": "/taʊn/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_town_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_town_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/0T1QYByMxrs"
+        }
+      ]
+    },
+    {
+      "symbol": "d",
+      "description": "Voiced alveolar plosive",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "dog",
+          "transcription": "/dɒg/"
+        },
+        {
+          "text": "day",
+          "transcription": "/deɪ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_day_2023feb_001.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_day_2023feb_001.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/qA5ZYC89oso"
+        }
+      ]
+    },
+    {
+      "symbol": "tʃ",
+      "description": "Voiceless postalveolar affricate",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "cheese",
+          "transcription": "/tʃiːz/"
+        },
+        {
+          "text": "church",
+          "transcription": "/tʃɜːtʃ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_cheese_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_cheese_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/PykxZ5kkrjs"
+        }
+      ]
+    },
+    {
+      "symbol": "dʒ",
+      "description": "Voiced postalveolar affricate",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "judge",
+          "transcription": "/dʒʌdʒ/"
+        },
+        {
+          "text": "jump",
+          "transcription": "/dʒʌmp/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_jump_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_jump_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/0IeQmGdo7gQ"
+        }
+      ]
+    },
+    {
+      "symbol": "k",
+      "description": "Voiceless velar plosive",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "cat",
+          "transcription": "/kæt/"
+        },
+        {
+          "text": "kite",
+          "transcription": "/kaɪt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_cat_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_cat_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/d1jyIpAmLe8"
+        }
+      ]
+    },
+    {
+      "symbol": "g",
+      "description": "Voiced velar plosive",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "go",
+          "transcription": "/gəʊ/"
+        },
+        {
+          "text": "give",
+          "transcription": "/gɪv/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_give_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_give_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/9eAqj9EfeK0"
+        }
+      ]
+    },
+    {
+      "symbol": "f",
+      "description": "Voiceless labiodental fricative",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "fish",
+          "transcription": "/fɪʃ/"
+        },
+        {
+          "text": "fly",
+          "transcription": "/flaɪ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_fish_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_fish_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/vE12RFyH-hY"
+        }
+      ]
+    },
+    {
+      "symbol": "v",
+      "description": "Voiced labiodental fricative",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "video",
+          "transcription": "/ˈvɪdiəʊ/"
+        },
+        {
+          "text": "very",
+          "transcription": "/ˈvɛri/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_very_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_very_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/mO04G0v5a_c"
+        }
+      ]
+    },
+    {
+      "symbol": "θ",
+      "description": "Voiceless dental fricative",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "think",
+          "transcription": "/θɪŋk/"
+        },
+        {
+          "text": "thought",
+          "transcription": "/θɔːt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_think_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_think_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/b4Aj3k65HSo"
+        }
+      ]
+    },
+    {
+      "symbol": "ð",
+      "description": "Voiced dental fricative",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "this",
+          "transcription": "/ðɪs/"
+        },
+        {
+          "text": "that",
+          "transcription": "/ðæt/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_this_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_this_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/tu1t3Fn5Lw8"
+        }
+      ]
+    },
+    {
+      "symbol": "s",
+      "description": "Voiceless alveolar fricative",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "see",
+          "transcription": "/siː/"
+        },
+        {
+          "text": "say",
+          "transcription": "/seɪ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_say_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_say_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/QtH3vRXmvvo"
+        }
+      ]
+    },
+    {
+      "symbol": "z",
+      "description": "Voiced alveolar fricative",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "zoo",
+          "transcription": "/zuː/"
+        },
+        {
+          "text": "zero",
+          "transcription": "/ˈzɪərəʊ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_zoo_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_zoo_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/o1ZvmX80t7Q"
+        }
+      ]
+    },
+    {
+      "symbol": "ʃ",
+      "description": "Voiceless postalveolar fricative",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "she",
+          "transcription": "/ʃiː/"
+        },
+        {
+          "text": "shall",
+          "transcription": "/ʃæl/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_she_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_she_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/NF92RdZC6wE"
+        }
+      ]
+    },
+    {
+      "symbol": "ʒ",
+      "description": "Voiced postalveolar fricative",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "measure",
+          "transcription": "/ˈmɛʒər/"
+        },
+        {
+          "text": "vision",
+          "transcription": "/ˈvɪʒən/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_vision_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_vision_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/bTxeAiBF61I"
+        }
+      ]
+    },
+    {
+      "symbol": "m",
+      "description": "Bilabial nasal",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "moon",
+          "transcription": "/muːn/"
+        },
+        {
+          "text": "man",
+          "transcription": "/mæn/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_moon_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_moon_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/0Te4Us8Tsv8"
+        }
+      ]
+    },
+    {
+      "symbol": "n",
+      "description": "Alveolar nasal",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "name",
+          "transcription": "/neɪm/"
+        },
+        {
+          "text": "now",
+          "transcription": "/naʊ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_name_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_name_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/qkgucMjv4T0"
+        }
+      ]
+    },
+    {
+      "symbol": "ŋ",
+      "description": "Velar nasal",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "sing",
+          "transcription": "/sɪŋ/"
+        },
+        {
+          "text": "long",
+          "transcription": "/lɒŋ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_sing_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_sing_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/rgWse3tloTw"
+        }
+      ]
+    },
+    {
+      "symbol": "h",
+      "description": "Voiceless glottal fricative",
+      "type": "consonant:unvoiced",
+      "examples": [
+        {
+          "text": "hat",
+          "transcription": "/hæt/"
+        },
+        {
+          "text": "hand",
+          "transcription": "/hænd/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_hand_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_hand_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/DM_gN6imoC8"
+        }
+      ]
+    },
+    {
+      "symbol": "l",
+      "description": "Alveolar lateral approximant",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "look",
+          "transcription": "/lʊk/"
+        },
+        {
+          "text": "love",
+          "transcription": "/lʌv/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_look_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_look_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/CwWLgmMk0Z0"
+        }
+      ]
+    },
+    {
+      "symbol": "r",
+      "description": "Alveolar approximant",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "red",
+          "transcription": "/rɛd/"
+        },
+        {
+          "text": "run",
+          "transcription": "/rʌn/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_run_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_run_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/Lxuo14hjP_8"
+        }
+      ]
+    },
+    {
+      "symbol": "w",
+      "description": "Labio-velar approximant",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "wet",
+          "transcription": "/wɛt/"
+        },
+        {
+          "text": "well",
+          "transcription": "/wɛl/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_we_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_we_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/HzhPB1hXG-o"
+        }
+      ]
+    },
+    {
+      "symbol": "j",
+      "description": "Palatal approximant",
+      "type": "consonant:voiced",
+      "examples": [
+        {
+          "text": "yes",
+          "transcription": "/jɛs/"
+        },
+        {
+          "text": "yellow",
+          "transcription": "/ˈjɛloʊ/"
+        }
+      ],
+      "audios": [
+        {
+          "accent": "UK",
+          "source": "/media/english/uk_phonetic/uk_phonetics_sound_yes_2023feb.mp3"
+        },
+        {
+          "accent": "US",
+          "source": "/media/english/us_phonetic/us_phonetics_sound_yes_2023feb.mp3"
+        }
+      ],
+      "videos": [
+        {
+          "accent": "UK",
+          "source": "https://www.youtube.com/embed/_Fi9E6Yw-qg"
+        }
+      ]
+    }
+  ]
+}
