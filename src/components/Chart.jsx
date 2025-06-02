@@ -78,7 +78,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
                 className="h-5 w-80 border border-gray-300 px-2 text-sm font-light"
                 colSpan={colSpan}
               >
-                {group}
+                <span>{group}</span>
               </th>
             ))}
           </tr>
@@ -87,10 +87,11 @@ export default function Chart({ ipa, onClickPhoneme }) {
               {rowIndex % rowSpan === 0 && (
                 <th
                   rowSpan={rowSpan}
-                  className="h-60 w-5 rotate-180 border border-gray-300 px-2 text-sm font-light"
-                  style={{ writingMode: "vertical-rl" }}
+                  className="h-60 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light"
                 >
-                  {phonemeGroup[rowIndex / rowSpan]}
+                  <span style={{ writingMode: "vertical-rl" }}>
+                    {phonemeGroup[rowIndex / rowSpan]}
+                  </span>
                 </th>
               )}
               {cols.map((symbol, colIndex) => (

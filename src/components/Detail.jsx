@@ -24,24 +24,18 @@ export default function Detail({ phoneme }) {
             colSpan={100}
             className="h-5 w-100 border border-gray-300 px-2 text-sm font-light"
           >
-            phoneme: {`/${phoneme.symbol}/`}
+            <span>phoneme: {`/${phoneme.symbol}/`}</span>
           </th>
         </tr>
         <tr>
-          <th
-            className="h-20 w-5 rotate-180 border border-gray-300 px-2 text-sm font-light"
-            style={{ writingMode: "vertical-rl" }}
-          >
-            accent
+          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+            <span style={{ writingMode: "vertical-rl" }}>accent</span>
           </th>
           <td className="size-20 border border-gray-300 p-2">
             <Audio audios={phoneme.audios} />
           </td>
-          <th
-            className="h-20 w-5 rotate-180 border border-gray-300 px-2 text-sm font-light"
-            style={{ writingMode: "vertical-rl" }}
-          >
-            example
+          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+            <span style={{ writingMode: "vertical-rl" }}>example</span>
           </th>
           <td className="border border-gray-300 p-2">
             <div className="flex text-sm font-light">
@@ -63,11 +57,8 @@ export default function Detail({ phoneme }) {
           </td>
         </tr>
         <tr>
-          <th
-            className="h-60 w-5 rotate-180 border border-gray-300 px-2 text-sm font-light"
-            style={{ writingMode: "vertical-rl" }}
-          >
-            guideline
+          <th className="h-60 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+            <span style={{ writingMode: "vertical-rl" }}>guideline</span>
           </th>
           <td colSpan={100} className="border border-gray-300 p-2">
             <Video
@@ -78,11 +69,8 @@ export default function Detail({ phoneme }) {
           </td>
         </tr>
         <tr>
-          <th
-            className="h-20 w-5 rotate-180 border border-gray-300 px-2 text-sm font-light"
-            style={{ writingMode: "vertical-rl" }}
-          >
-            game
+          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+            <span style={{ writingMode: "vertical-rl" }}>game</span>
           </th>
           <td colSpan={100} className="border border-gray-300 p-2">
             <span className="text-sm font-light">Incoming</span>
