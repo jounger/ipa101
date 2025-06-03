@@ -9,6 +9,11 @@ function App() {
 
   return (
     <>
+      <header className="flex items-center justify-center p-2">
+        <h1 className="text-xl font-bold md:text-2xl">
+          International Phonetic Alphabet
+        </h1>
+      </header>
       <Content ipa={ipa} />
     </>
   )

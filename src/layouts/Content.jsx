@@ -18,9 +18,9 @@ export default function Content({ ipa }) {
   }
 
   return (
-    <div className="flex flex-col items-start justify-center gap-2 p-4 md:flex-row">
+    <main className="flex flex-col items-start justify-center gap-2 p-1 md:flex-row md:p-4">
       {ipa && <Chart ipa={ipa} onClickPhoneme={handleSelectedPhoneme} />}
       {selectedPhoneme && <Detail phoneme={selectedPhoneme} />}
-    </div>
+    </main>
   )
 }

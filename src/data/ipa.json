@@ -2,8 +2,7 @@
   "name": "International Phonetic Alphabet",
   "abbreviation": "IPA",
   "description": "A system of phonetic notation based primarily on the Latin alphabet, used by linguists, speech-language pathologists, singers, actors, and translators.",
-  "vowel_symbols": "iː ɪ ʊ uː ɛ ə ɜː ɔː æ ʌ ɑː ɒ",
-  "diphthong_symbols": "ɪə eɪ ʊə ɔɪ əʊ eə aɪ aʊ",
+  "vowel_symbols": "iː ɪ ʊ uː ɛ ə ɜː ɔː æ ʌ ɑː ɒ ɪə eɪ ʊə ɔɪ əʊ eə aɪ aʊ",
   "consonant_symbols": "p b t d tʃ dʒ k g f v θ ð s z ʃ ʒ m n ŋ h l r w j",
   "layout": "iː ɪ ʊ uː ɪə eɪ * * ɛ ə ɜː ɔː ʊə ɔɪ əʊ * æ ʌ ɑː ɒ eə aɪ aʊ * p b t d tʃ dʒ k g f v θ ð s z ʃ ʒ m n ŋ h l r w j",
   "phonemes": [

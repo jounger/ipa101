@@ -12,5 +12,4 @@ export const CHART_COLOR = {
     voiced: "bg-blue-100",
     unvoiced: "bg-green-100",
   },
-  default: "bg-gray-50",
 }

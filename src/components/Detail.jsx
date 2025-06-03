@@ -17,27 +17,27 @@ export default function Detail({ phoneme }) {
   }
 
   return (
-    <table className="table-auto border-collapse border border-gray-300">
+    <table className="w-screen table-auto border-collapse border border-gray-400 md:w-auto">
       <tbody>
         <tr>
           <th
             colSpan={100}
-            className="h-5 w-100 border border-gray-300 px-2 text-sm font-light"
+            className="h-5 border border-gray-400 px-2 text-sm font-light"
           >
             <span>phoneme: {`/${phoneme.symbol}/`}</span>
           </th>
         </tr>
         <tr>
-          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+          <th className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light">
             <span style={{ writingMode: "vertical-rl" }}>accent</span>
           </th>
-          <td className="size-20 border border-gray-300 p-2">
+          <td className="h-20 w-20 border border-gray-400 p-2">
             <Audio audios={phoneme.audios} />
           </td>
-          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+          <th className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light">
             <span style={{ writingMode: "vertical-rl" }}>example</span>
           </th>
-          <td className="border border-gray-300 p-2">
+          <td className="h-20 min-w-20 border border-gray-400 p-2">
             <div className="flex text-sm font-light">
               {phoneme.examples.map((example, index) => (
                 <span key={index}>
@@ -57,10 +57,10 @@ export default function Detail({ phoneme }) {
           </td>
         </tr>
         <tr>
-          <th className="h-60 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
+          <th className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light">
             <span style={{ writingMode: "vertical-rl" }}>guideline</span>
           </th>
-          <td colSpan={100} className="border border-gray-300 p-2">
+          <td colSpan={100} className="border border-gray-400 p-2">
             <Video
               videos={phoneme.videos}
               selectedVideo={selectedVideo}
@@ -69,11 +69,11 @@ export default function Detail({ phoneme }) {
           </td>
         </tr>
         <tr>
-          <th className="h-20 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light">
-            <span style={{ writingMode: "vertical-rl" }}>game</span>
+          <th className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light">
+            <span style={{ writingMode: "vertical-rl" }}>incoming</span>
           </th>
-          <td colSpan={100} className="border border-gray-300 p-2">
-            <span className="text-sm font-light">Incoming</span>
+          <td colSpan={100} className="h-20 border border-gray-400 p-2">
+            <span className="text-sm font-light">???</span>
           </td>
         </tr>
       </tbody>
@@ -108,7 +108,7 @@ function Audio({ audios }) {
             />
           </audio>
           <button
-            className="flex cursor-pointer items-center gap-1 border border-gray-100 px-1 hover:border-gray-300 hover:bg-gray-50 hover:shadow-lg"
+            className="flex cursor-pointer items-center gap-1 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-100 hover:shadow-lg"
             onClick={() => handleAudioClick(index)}
           >
             <span className="text-sm font-normal hover:underline">
@@ -165,9 +165,9 @@ function Video({ selectedVideo, videos, onClick }) {
             key={video.source}
             className={classNames(
               currentVideo.source === video.source
-                ? "cursor-not-allowed border-gray-300 bg-gray-50"
+                ? "cursor-not-allowed border-gray-400 bg-gray-100"
                 : "cursor-pointer border-gray-100",
-              "flex items-center justify-between gap-1 border px-1 hover:border-gray-300 hover:bg-gray-50 hover:shadow-lg",
+              "flex items-center justify-between gap-1 border px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
             )}
             onClick={() => onClick(video)}
           >

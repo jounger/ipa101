@@ -31,7 +31,10 @@ export default function Chart({ ipa, onClickPhoneme }) {
 
   const getPhonemeBackgroundColor = (symbol) => {
     const phoneme = phonemeMap[symbol]
-    if (!phoneme) return "bg-gray-100"
+    if (!phoneme) {
+      return
+    }
+
     const types = phoneme.type.split(":")
     let color = CHART_COLOR
     for (let i = 0; i < types.length; i++) {
@@ -41,7 +44,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
       }
     }
 
-    return (typeof color === "string" && color) || CHART_COLOR["default"]
+    return typeof color === "string" && color
   }
 
   const rows = useMemo(() => {
@@ -68,14 +71,32 @@ export default function Chart({ ipa, onClickPhoneme }) {
 
   return (
     <div className="flex flex-col items-center justify-center gap-2">
-      <table className="table-fixed border-collapse border border-gray-300">
+      <table className="w-screen table-auto border-collapse border border-gray-400 md:w-auto">
+        <caption className="caption-bottom pt-2">
+          <div className="flex w-full justify-around md:justify-center md:gap-2">
+            {chartColors.map((color, index) => {
+              const [key, value] = Object.entries(color)[0]
+              return (
+                <div
+                  key={index}
+                  className={classNames(
+                    value,
+                    "w-18 cursor-pointer border border-gray-400 text-center text-xs font-light duration-200 ease-in hover:shadow-lg md:w-20 md:text-sm",
+                  )}
+                >
+                  {key}
+                </div>
+              )
+            })}
+          </div>
+        </caption>
         <tbody>
           <tr>
-            <th className="border border-gray-300 text-sm font-light"></th>
+            <th className="border border-gray-400 text-sm font-light"></th>
             {vowelGroup.map((group, index) => (
               <th
                 key={index}
-                className="h-5 w-80 border border-gray-300 px-2 text-sm font-light"
+                className="h-5 border border-gray-400 px-2 text-sm font-light"
                 colSpan={colSpan}
               >
                 <span>{group}</span>
@@ -87,7 +108,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
               {rowIndex % rowSpan === 0 && (
                 <th
                   rowSpan={rowSpan}
-                  className="h-60 w-5 rotate-180 border border-gray-300 py-2 text-sm font-light"
+                  className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light"
                 >
                   <span style={{ writingMode: "vertical-rl" }}>
                     {phonemeGroup[rowIndex / rowSpan]}
@@ -99,7 +120,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
                   key={colIndex}
                   className={classNames(
                     getPhonemeBackgroundColor(symbol),
-                    "size-20 border border-gray-300 p-2 hover:shadow-lg",
+                    "h-20 w-12 border border-gray-400 duration-200 ease-in hover:shadow-lg md:w-20 md:hover:bg-gray-100",
                   )}
                 >
                   {phonemeMap[symbol] && (
@@ -116,26 +137,6 @@ export default function Chart({ ipa, onClickPhoneme }) {
           ))}
         </tbody>
       </table>
-      <div className="flex justify-center gap-2">
-        {chartColors.map((color, index) => {
-          const [key, value] = Object.entries(color)[0]
-          if (key === "default") {
-            return null
-          }
-
-          return (
-            <span
-              key={index}
-              className={classNames(
-                value,
-                "w-20 cursor-pointer border border-gray-300 text-center text-sm font-light hover:shadow-lg",
-              )}
-            >
-              {key}
-            </span>
-          )
-        })}
-      </div>
     </div>
   )
 }

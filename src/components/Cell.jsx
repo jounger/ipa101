@@ -10,14 +10,12 @@ export default function Cell({ phoneme, onClick }) {
 
   return (
     <div
-      className="flex cursor-pointer flex-col items-center justify-center"
+      className="flex cursor-pointer flex-col items-center justify-center p-1 md:p-2"
       onClick={onClick}
     >
-      <p className="text-4xl font-normal hover:animate-pulse">
-        {phoneme.symbol}
-      </p>
+      <p className="text-2xl font-normal md:text-4xl">{phoneme.symbol}</p>
       <p
-        className="cursor-help text-sm font-light hover:underline"
+        className="cursor-help text-xs font-light hover:underline md:text-sm"
         title={example.transcription}
       >
         {example.text}
