@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ipa101.com/sitemap.xml
