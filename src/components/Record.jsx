@@ -76,17 +76,17 @@ export default function Record() {
   }
 
   return (
-    <div className="flex flex-col items-start gap-2">
+    <div className="flex gap-2">
       <button
         className={classNames(
-          "flex h-8 cursor-pointer items-center justify-between gap-1 gap-2 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
+          "flex cursor-pointer items-center justify-between gap-1 gap-2 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
           recording && "border-gray-400 bg-gray-100",
         )}
         onClick={handleRecordClick}
       >
         {recording ? (
           <>
-            <span className="text-sm font-normal">Stop recording</span>
+            <span className="text-sm font-normal">Stop</span>
             <svg
               className="size-4 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
@@ -109,9 +109,10 @@ export default function Record() {
             </svg>
           </>
         ) : (
-          <span className="text-sm font-normal hover:underline">
-            Record yourself 🎙️
-          </span>
+          <>
+            <span className="text-sm font-normal hover:underline">Start</span>
+            🎙️
+          </>
         )}
       </button>
       <audio
