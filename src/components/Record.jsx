@@ -79,7 +79,7 @@ export default function Record() {
     <div className="flex gap-2">
       <button
         className={classNames(
-          "flex cursor-pointer items-center justify-between gap-1 gap-2 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
+          "flex h-18 w-18 cursor-pointer items-center justify-between gap-2 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
           recording && "border-gray-400 bg-gray-100",
         )}
         onClick={handleRecordClick}
@@ -115,15 +115,17 @@ export default function Record() {
           </>
         )}
       </button>
-      <audio
-        ref={audioRef}
-        src={audioUrl || undefined}
-        controls
-        preload="none"
-        className="w-full border border-gray-300 bg-gray-100"
-      >
-        Your browser does not support the audio element.
-      </audio>
+      <div className="align flex w-full items-center border border-gray-300 bg-gray-100">
+        <audio
+          ref={audioRef}
+          src={audioUrl || undefined}
+          controls
+          preload="none"
+          className="w-full"
+        >
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
   )
 }

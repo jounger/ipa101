@@ -59,7 +59,7 @@ export default function Detail({ phoneme }) {
           <th className="w-6 rotate-180 border border-gray-400 py-2 text-sm font-light">
             <span style={{ writingMode: "vertical-rl" }}>example</span>
           </th>
-          <td colSpan={100} className="h-20 border border-gray-400 p-2">
+          <td colSpan={100} className="h-22 border border-gray-400 p-2">
             <div className="flex text-sm font-light">
               {phoneme.examples.map((example, index) => (
                 <span key={index}>
