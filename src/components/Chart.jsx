@@ -96,7 +96,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
             {vowelGroup.map((group, index) => (
               <th
                 key={index}
-                className="h-5 border border-gray-400 px-2 text-sm font-light"
+                className="h-6 border border-gray-400 px-2 text-sm font-light"
                 colSpan={colSpan}
               >
                 <span>{group}</span>
@@ -108,7 +108,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
               {rowIndex % rowSpan === 0 && (
                 <th
                   rowSpan={rowSpan}
-                  className="w-5 rotate-180 border border-gray-400 py-2 text-sm font-light"
+                  className="w-6 rotate-180 border border-gray-400 py-2 text-sm font-light"
                 >
                   <span style={{ writingMode: "vertical-rl" }}>
                     {phonemeGroup[rowIndex / rowSpan]}
@@ -120,7 +120,7 @@ export default function Chart({ ipa, onClickPhoneme }) {
                   key={colIndex}
                   className={classNames(
                     getPhonemeBackgroundColor(symbol),
-                    "h-20 w-12 border border-gray-400 duration-200 ease-in hover:shadow-lg md:w-20 md:hover:bg-gray-100",
+                    "h-22 w-12 border border-gray-400 duration-200 ease-in hover:shadow-lg md:w-22 md:hover:bg-gray-100",
                   )}
                 >
                   {phonemeMap[symbol] && (
