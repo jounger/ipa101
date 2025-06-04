@@ -1,76 +1,71 @@
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import { classNames } from "../utils/dom"
 
 export default function Record() {
   const audioRef = useRef(null)
-  const recordButtonRef = useRef(null)
+  const streamRef = useRef(null)
+  const mediaRecorderRef = useRef(null)
+  const [audioUrl, setAudioUrl] = useState(null)
   const [recording, setRecording] = useState(false)
 
-  const onSuccess = useCallback(
-    (stream) => {
-      const mediaRecorder = new MediaRecorder(stream)
-      const audioChunks = []
-      let recordingTimeout = null
-
-      mediaRecorder.ondataavailable = (event) => {
-        audioChunks.push(event.data)
-      }
-
-      mediaRecorder.onstart = () => {
-        audioChunks.length = 0
-        recordingTimeout = setTimeout(() => {
-          if (mediaRecorder.state === "recording") {
-            mediaRecorder.stop()
-          }
-        }, 5000)
-        audioRef.current.muted = true
-        setRecording(true)
-      }
-
-      mediaRecorder.onstop = () => {
-        clearTimeout(recordingTimeout)
-        setRecording(false)
-        audioRef.current.muted = false
-        if (audioChunks.length === 0) {
-          console.warn("No audio data recorded")
-          return
-        }
-
-        const audioBlob = new Blob(audioChunks, {
-          type: mediaRecorder.mimeType,
-        })
-        audioChunks.length = 0
-        const audioUrl = URL.createObjectURL(audioBlob)
-        audioRef.current.src = audioUrl
-        audioRef.current.load()
-      }
-
-      recordButtonRef.current.addEventListener("click", (e) => {
-        e.preventDefault()
-        if (mediaRecorder.state === "recording") {
-          mediaRecorder.stop()
-        } else {
-          audioRef.current.pause()
-          mediaRecorder.start()
-        }
-      })
-    },
-    [audioRef, recordButtonRef],
-  )
-
-  useEffect(() => {
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-      console.error("getUserMedia not supported on your browser!")
+  const handleRecordClick = async (e) => {
+    e.preventDefault()
+    if (recording) {
+      mediaRecorderRef.current.stop()
       return
     }
 
-    navigator.mediaDevices
-      .getUserMedia({ audio: true })
-      .then(onSuccess)
-      .catch((error) => {
-        console.error("Error accessing microphone:", error)
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    streamRef.current = stream
+    const mediaRecorder = new MediaRecorder(stream)
+    mediaRecorderRef.current = mediaRecorder
+    const audioChunks = []
+    let recordingTimeout = null
+
+    mediaRecorder.ondataavailable = (event) => {
+      audioChunks.push(event.data)
+    }
+
+    mediaRecorder.onstart = () => {
+      audioChunks.length = 0
+      recordingTimeout = setTimeout(() => {
+        if (mediaRecorder.state === "recording") {
+          mediaRecorder.stop()
+        }
+      }, 5000)
+      audioRef.current.muted = true
+      setRecording(true)
+    }
+
+    mediaRecorder.onstop = () => {
+      clearTimeout(recordingTimeout)
+      audioRef.current.muted = false
+      setRecording(false)
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => {
+          track.stop()
+        })
+        streamRef.current = null
+      }
+      if (audioChunks.length === 0) {
+        setAudioUrl(null)
+        return
+      }
+      if (audioChunks.length === 0) {
+        console.warn("No audio data recorded")
+        return
+      }
+
+      const audioBlob = new Blob(audioChunks, {
+        type: mediaRecorder.mimeType,
       })
-  }, [onSuccess])
+      audioChunks.length = 0
+      const audioUrl = URL.createObjectURL(audioBlob)
+      setAudioUrl(audioUrl)
+    }
+
+    mediaRecorder.start()
+  }
 
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
     return (
@@ -83,11 +78,11 @@ export default function Record() {
   return (
     <div className="flex flex-col items-start gap-2">
       <button
-        ref={recordButtonRef}
         className={classNames(
           "flex h-8 cursor-pointer items-center justify-between gap-1 gap-2 border border-gray-300 px-1 duration-200 ease-in hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg",
           recording && "border-gray-400 bg-gray-100",
         )}
+        onClick={handleRecordClick}
       >
         {recording ? (
           <>
@@ -121,6 +116,7 @@ export default function Record() {
       </button>
       <audio
         ref={audioRef}
+        src={audioUrl || undefined}
         controls
         preload="none"
         className="w-full border border-gray-300 bg-gray-100"
