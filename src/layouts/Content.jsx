@@ -29,7 +29,7 @@ export default function Content({ ipa }) {
     <main className="flex flex-wrap items-start justify-center gap-2 px-2 pb-10">
       <Chart
         ipa={ipa}
-        phoneme={selectedPhoneme}
+        selectedPhoneme={selectedPhoneme}
         onClickPhoneme={handleSelectedPhoneme}
       />
       {selectedPhoneme && <Detail phoneme={selectedPhoneme} />}
