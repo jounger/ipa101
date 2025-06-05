@@ -121,15 +121,14 @@ export default function Chart({ ipa, phoneme, onClickPhoneme }) {
               <td
                 key={colIndex}
                 className={classNames(
-                  phoneme.symbol === symbol
-                    ? "bg-gray-200 shadow-lg"
-                    : getPhonemeBackgroundColor(symbol),
+                  getPhonemeBackgroundColor(symbol),
                   "size-12 border border-gray-400 duration-300 ease-in-out hover:bg-gray-100 hover:shadow-lg sm:size-18 md:size-20 lg:size-22",
                 )}
               >
                 {phonemeMap[symbol] && (
                   <Phoneme
                     phoneme={phonemeMap[symbol]}
+                    isSelected={phoneme.symbol === symbol}
                     onClick={() => {
                       onClickPhoneme(phonemeMap[symbol])
                     }}
