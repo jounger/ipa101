@@ -19,7 +19,7 @@ export default function Detail({ phoneme }) {
   }
 
   return (
-    <table className="w-auto table-auto border-collapse border border-gray-400 lg:w-100">
+    <table className="w-auto table-auto border-collapse border border-gray-400">
       <tbody>
         <tr>
           <th colSpan={100} className="h-6 border border-gray-400">
