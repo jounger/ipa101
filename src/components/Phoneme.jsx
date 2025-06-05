@@ -9,11 +9,10 @@ export default function Cell({ phoneme, onClick }) {
   }, [phoneme.examples])
 
   return (
-    <div
-      className="flex cursor-pointer flex-col items-center justify-center p-1 md:p-2"
-      onClick={onClick}
-    >
-      <p className="text-2xl font-normal md:text-4xl">{phoneme.symbol}</p>
+    <div className="cursor-pointer text-center md:p-2" onClick={onClick}>
+      <p className="text-2xl font-normal sm:text-3xl md:text-4xl">
+        {phoneme.symbol}
+      </p>
       <p
         className="cursor-help text-xs font-light hover:underline md:text-sm"
         title={example.transcription}
