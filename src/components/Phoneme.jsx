@@ -10,17 +10,23 @@ export default function Cell({ phoneme, isSelected, onClick }) {
   }, [phoneme.examples])
 
   return (
-    <div className="cursor-pointer text-center md:p-2" onClick={onClick}>
+    <div
+      className={classNames(
+        { "inset-ring inset-ring-purple-800 sm:inset-ring-2": isSelected },
+        "h-full w-full cursor-pointer text-center md:p-2",
+      )}
+      onClick={onClick}
+    >
       <p
         className={classNames(
           { "text-purple-800": isSelected },
-          "text-2xl font-normal sm:text-3xl md:text-4xl",
+          "text-2xl font-normal sm:text-4xl",
         )}
       >
         {phoneme.symbol}
       </p>
       <p
-        className="cursor-help text-xs font-light hover:underline md:text-sm"
+        className="cursor-help p-px text-xs font-light hover:underline md:text-sm"
         title={example.transcription}
       >
         {example.text}

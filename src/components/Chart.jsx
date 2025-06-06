@@ -72,19 +72,20 @@ export default function Chart({ ipa, selectedPhoneme, onClickPhoneme }) {
   return (
     <table className="w-auto table-auto border-collapse border border-gray-400">
       <caption className="caption-bottom pt-2">
-        <div className="flex w-full justify-between sm:justify-center sm:gap-2">
+        <div className="flex w-full justify-between gap-1 sm:justify-center sm:gap-2">
           {chartColors.map((color, index) => {
             const [key, value] = Object.entries(color)[0]
             return (
-              <p
-                key={index}
+              <div
                 className={classNames(
                   value,
-                  "w-16 cursor-pointer border border-gray-400 px-1 text-center text-xs font-light sm:w-20 sm:px-2 sm:text-sm",
+                  "w-16 cursor-pointer border border-gray-400 text-center sm:w-20 sm:px-2",
                 )}
               >
-                {key}
-              </p>
+                <p key={index} className="text-xs font-light sm:text-sm">
+                  {key}
+                </p>
+              </div>
             )
           })}
         </div>
