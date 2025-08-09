@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react"
 
 import { classNames } from "../utils/dom"
+import { getSearchParams, setSearchParams } from "../utils/url"
+import { ACCENTS, DEFAULT_ACCENT } from "../utils/constants"
 
 export default function Video({ videos }) {
     if (!videos || videos.length === 0) {
@@ -13,25 +15,28 @@ export default function Video({ videos }) {
     const width = Math.min(minWidth, maxWidth)
     const height = Math.floor(width * (9 / 16))
 
-    const [selectedVideo, setSelectedVideo] = useState(videos[0])
+    const searchParams = getSearchParams(["accent"])
+    const accent = ((searchParams.length > 0 || ACCENTS.includes(searchParams[0])) && searchParams[0]) || DEFAULT_ACCENT
+
+    const getVideoByAccent = (videos, accent = DEFAULT_ACCENT) => {
+        return videos.find(video => video.accent === accent) || videos[0]
+    }
 
     const onSelectVideo = (video) => {
         if (selectedVideo.source !== video.source) {
             setSelectedVideo(video)
+            setSearchParams({ "accent": video.accent || DEFAULT_ACCENT })
         }
     }
 
+    const [selectedVideo, setSelectedVideo] = useState(getVideoByAccent(videos, accent))
+
     const currentVideo = useMemo(() => {
-        const isFound = videos.find(
+        const video = videos.find(
             (video) => video.source === selectedVideo.source,
         )
-        if (isFound) {
-            return isFound
-        }
-
-        return videos[0]
+        return video || getVideoByAccent(videos, accent)
     }, [selectedVideo, videos])
-
 
     return (
         <div className="flex flex-col gap-2">

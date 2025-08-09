@@ -19,4 +19,5 @@ export const CHART_COLOR = {
     },
 }
 
-export const DEFAULT_ACCENT = 'UK'
+export const ACCENTS = ["UK", "US"]
+export const DEFAULT_ACCENT = ACCENTS[0]

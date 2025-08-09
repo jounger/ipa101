@@ -1,9 +1,18 @@
 import Content from "./layouts/Content"
 
+import { getSearchParams, setSearchParams } from "./utils/url"
+import { ACCENTS, DEFAULT_ACCENT } from "./utils/constants"
+
 import ipa from "./data/ipa.json"
 
 function App() {
     const { layout, phonemes } = ipa
+
+    const searchParams = getSearchParams(["accent"])
+    const accent = ((searchParams.length > 0 || ACCENTS.includes(searchParams[0])) && searchParams[0])
+    if (!accent) {
+        setSearchParams({ "accent": DEFAULT_ACCENT })
+    }
 
     return (
         <div className="h-screen">
