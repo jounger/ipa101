@@ -6,14 +6,14 @@ export const getPhonemeBySymbol = (phonemes) => {
 }
 
 export const getChartRows = (chartLayout, numberOfRow, numberOfCol) => {
-    const rows = new Array(numberOfRow)
+    const rows = []
     const symbols = chartLayout.split(" ")
     for (let i = 0; i < symbols.length; i += numberOfCol) {
         const cols = new Array(numberOfCol)
         for (let j = 0; j < numberOfCol; j++) {
             cols[j] = symbols[i + j]
         }
-        rows[i] = cols
+        rows.push(cols)
     }
     return rows
 }
